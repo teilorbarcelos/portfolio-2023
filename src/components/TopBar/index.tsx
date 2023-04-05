@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { AmburgerButton } from "./components/AmburgerButton";
-import { SocialIcon } from "./components/SocialIcon";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import {
   TopBarCenter,
