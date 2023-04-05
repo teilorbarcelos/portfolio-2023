@@ -10,13 +10,13 @@ import { ThemeProvider } from "styled-components";
 import { themeConstants } from "@/styles/theme.constants";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { theme: themeContext } = useThemeStore();
+  const { theme } = useThemeStore();
   const { isLoading } = useLoadingStore();
 
   if (process.env.NODE_ENV !== "production") mswServer.listen();
 
   return (
-    <ThemeProvider theme={themeConstants[themeContext]}>
+    <ThemeProvider theme={themeConstants[theme]}>
       {isLoading && <Loading />}
       <Background>
         <Component {...pageProps} />

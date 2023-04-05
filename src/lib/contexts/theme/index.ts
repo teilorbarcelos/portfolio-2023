@@ -1,18 +1,18 @@
 import { create } from "zustand";
 
-export enum ThemeType {
+export enum Theme {
   DARK = "dark",
   LIGHT = "light",
 }
 
 type ThemeState = {
-  theme: ThemeType;
+  theme: Theme;
   setLight: () => void;
   setDark: () => void;
 };
 
 export const useThemeStore = create<ThemeState>((set) => ({
-  theme: ThemeType.DARK,
-  setLight: () => set(() => ({ theme: ThemeType.LIGHT })),
-  setDark: () => set(() => ({ theme: ThemeType.DARK })),
+  theme: Theme.DARK,
+  setLight: () => set(() => ({ theme: Theme.LIGHT })),
+  setDark: () => set(() => ({ theme: Theme.DARK })),
 }));
