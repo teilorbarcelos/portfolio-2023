@@ -1,7 +1,7 @@
 import { useTranslation } from "@/hooks/useTranslation";
 import { useLanguageStore } from "@/lib/contexts/language";
 import { Language } from "@/lib/contexts/language/language.constants";
-import { HomeContainer } from "./Home.styles";
+import { HomeContainer } from "./home.styles";
 import { Button } from "@/components/Button";
 
 export default function Home() {
