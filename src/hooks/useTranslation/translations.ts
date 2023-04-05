@@ -13,5 +13,21 @@ export const translations: Translations = {
   switchLanguage: {
     [Language.EN]: "Switch Language",
     [Language.PT_BR]: "Alternar Idioma",
+  },
+  hireMe: {
+    [Language.EN]: "Hire Me",
+    [Language.PT_BR]: "Contrate-me",
+  },
+  languageImageUrl: {
+    [Language.EN]: "/icons/brasil-flag.png",
+    [Language.PT_BR]: "/icons/eua-flag.png",
+  },
+  languageImageTitle: {
+    [Language.EN]: "Alternar para português!",
+    [Language.PT_BR]: "Switch to english!",
+  },
+  languageImageAlt: {
+    [Language.EN]: "Brazil Flag",
+    [Language.PT_BR]: "Bandeira americana",
   }
 };
