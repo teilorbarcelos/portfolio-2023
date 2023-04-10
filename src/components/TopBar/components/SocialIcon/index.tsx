@@ -11,10 +11,13 @@ export const SocialIcon = ({ children, url, dataTestId }: SocialIconProps) => {
       ? themeConstants.dark.socialIconColor
       : themeConstants.light.socialIconColor;
   return (
-    <a target="_blank" href={url} rel="noreferrer" data-testid={dataTestId}>
-      <SocialIconContainer>
-        {cloneElement(children, { fill: color })}
-      </SocialIconContainer>
-    </a>
+    <SocialIconContainer
+      target="_blank"
+      href={url}
+      rel="noreferrer"
+      data-testid={dataTestId}
+    >
+      {cloneElement(children, { fill: color })}
+    </SocialIconContainer>
   );
 };

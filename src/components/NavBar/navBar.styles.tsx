@@ -20,4 +20,23 @@ export const NavbarContainer = styled.nav<NavBarProps>`
     props.isOpen ? "translate(0, -50%)" : "translate(-140%, -50%)"};
 
   width: 72px;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 0;
+    background: ${(props) => props.theme.navBarMobileContainer};
+    box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.05);
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: unset;
+    top: unset;
+
+    transform: ${(props) =>
+      props.isOpen ? "translate(0, 0)" : "translate(-100%, 0)"};
+  }
 `;

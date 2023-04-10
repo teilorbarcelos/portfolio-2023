@@ -5,6 +5,7 @@ import {
   LanguageSwitcher,
 } from "@/components/TopBar/components";
 import {
+  MobileRightContainer,
   TopBarCenter,
   TopBarContainer,
   TopBarLeft,
@@ -29,6 +30,10 @@ export const TopBar = () => {
 
       <TopBarRight>
         <HireMeButton />
+        <MobileRightContainer>
+          <GitHub />
+          <Linkedin />
+        </MobileRightContainer>
       </TopBarRight>
     </TopBarContainer>
   );

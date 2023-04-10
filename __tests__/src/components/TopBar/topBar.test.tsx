@@ -14,11 +14,11 @@ describe("TopBar", () => {
     const languageSwitcher = screen.getByTestId("language-switcher");
     expect(languageSwitcher).toBeInTheDocument();
 
-    const githubIcon = screen.getByTestId("github-link-icon");
-    expect(githubIcon).toBeInTheDocument();
+    const githubIcon = screen.getAllByTestId("github-link-icon");
+    expect(githubIcon[0].firstChild).toBeInTheDocument();
 
-    const linkedinIcon = screen.getByTestId("linkedin-link-icon");
-    expect(linkedinIcon).toBeInTheDocument();
+    const linkedinIcon = screen.getAllByTestId("linkedin-link-icon");
+    expect(linkedinIcon[0].firstChild).toBeInTheDocument();
 
     const hireMeButton = screen.getByTestId("hire-me-button");
     expect(hireMeButton).toBeInTheDocument();

@@ -8,4 +8,8 @@ export const CloseIconContainer = styled.div`
   &:hover {
     filter: brightness(1.5);
   }
+
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
 `;

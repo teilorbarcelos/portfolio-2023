@@ -11,6 +11,7 @@ declare module "styled-components" {
     socialIconColor: string;
     menuLinkActiveColor: string;
     menuLinkColor: string;
+    navBarMobileContainer: string;
   }
 }
 

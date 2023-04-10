@@ -7,6 +7,7 @@ import { BagIcon } from "@/components/Icons/bag";
 import { PenIcon } from "@/components/Icons/pen";
 import { ResumeIcon } from "@/components/Icons/resume";
 import { NavbarContainer } from "@/components/NavBar/navBar.styles";
+import { TalkIcon } from "../Icons/talk";
 
 export const NavBar = () => {
   const t = useTranslation();
@@ -34,7 +35,7 @@ export const NavBar = () => {
       </MenuLink>
 
       <MenuLink path="/contact" title={t("contact")} testId="contact-link">
-        <BagIcon />
+        <TalkIcon />
       </MenuLink>
 
       <CloseIconComponent onClick={toggleOpenMenu} />

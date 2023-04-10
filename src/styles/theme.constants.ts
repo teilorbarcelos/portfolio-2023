@@ -14,7 +14,8 @@ const colorVariables = {
   COLOR006: "#354765",
   COLOR007: "#fff",
   COLOR008: "#4f6591",
-  COLOR009: "rgba(0,0,0,.1)",
+  COLOR009: "rgba(0,0,0,0.1)",
+  COLOR010: "rgba(0,0,0,0.9)",
 };
 
 export const themeConstants: ThemesConstantsProps = {
@@ -27,6 +28,7 @@ export const themeConstants: ThemesConstantsProps = {
     socialIconColor: colorVariables.COLOR003,
     menuLinkActiveColor: colorVariables.COLOR004,
     menuLinkColor: colorVariables.COLOR003,
+    navBarMobileContainer: colorVariables.COLOR010,
   },
   light: {
     backgroundColor: colorVariables.COLOR005,
@@ -37,5 +39,6 @@ export const themeConstants: ThemesConstantsProps = {
     socialIconColor: colorVariables.COLOR008,
     menuLinkActiveColor: colorVariables.COLOR004,
     menuLinkColor: colorVariables.COLOR006,
+    navBarMobileContainer: colorVariables.COLOR007,
   },
 };

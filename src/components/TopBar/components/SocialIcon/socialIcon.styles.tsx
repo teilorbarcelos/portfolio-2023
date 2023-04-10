@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SocialIconContainer = styled.div`
+export const SocialIconContainer = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;

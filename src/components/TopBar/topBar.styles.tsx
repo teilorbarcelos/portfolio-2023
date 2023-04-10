@@ -25,9 +25,34 @@ export const TopBarCenter = styled.div`
   display: flex;
   align-items: center;
   gap: 12.5px;
+
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
 `;
 
 export const TopBarRight = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    margin-top: 38px;
+  }
+`;
+
+export const MobileRightContainer = styled.div`
+  display: none;
+
+  @media screen and (max-width: 450px) {
+    display: flex;
+  }
+`;
+
+export const MobileLeftContainer = styled.div`
+  display: none;
+
+  @media screen and (max-width: 450px) {
+    display: flex;
+  }
 `;
