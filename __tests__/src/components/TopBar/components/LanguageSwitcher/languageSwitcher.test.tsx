@@ -10,8 +10,8 @@ describe("LanguageSwitcher", () => {
     const { getByTestId } = render(<LanguageSwitcher />);
     const switcher = getByTestId("language-switcher");
     fireEvent.click(switcher);
-    expect(result.current.language).toBe(Language.EN);
-    fireEvent.click(switcher);
     expect(result.current.language).toBe(Language.PT_BR);
+    fireEvent.click(switcher);
+    expect(result.current.language).toBe(Language.EN);
   });
 });

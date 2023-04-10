@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface IconProps {
+  themeState: string;
+}
+
 export const ThemeSwitcherContainer = styled.label`
   position: relative;
   display: inline-block;
@@ -46,7 +50,7 @@ export const Slider = styled.span`
   }
 `;
 
-export const SunIcon = styled.span`
+export const SunIcon = styled.span<IconProps>`
   position: absolute;
   top: 4px;
   right: 4px;
@@ -54,11 +58,11 @@ export const SunIcon = styled.span`
   height: 16px;
   background-image: url("/icons/sun-icon.svg");
   background-size: cover;
-  opacity: ${({ theme }) => (theme === "dark" ? 1 : 0)};
+  opacity: ${({ themeState }) => (themeState === "dark" ? 1 : 0)};
   transition: opacity 0.4s ease-in-out;
 `;
 
-export const MoonIcon = styled.span`
+export const MoonIcon = styled.span<IconProps>`
   position: absolute;
   top: 4px;
   left: 4px;
@@ -66,6 +70,6 @@ export const MoonIcon = styled.span`
   height: 16px;
   background-image: url("/icons/moon-icon.svg");
   background-size: cover;
-  opacity: ${({ theme }) => (theme === "light" ? 1 : 0)};
+  opacity: ${({ themeState }) => (themeState === "light" ? 1 : 0)};
   transition: opacity 0.4s ease-in-out;
 `;

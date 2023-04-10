@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import { ReactElement } from "react";
 
 export interface SocialIconProps {
-  children: ReactNode;
+  children: ReactElement;
   url: string;
   dataTestId: string;
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { LoadingContainer } from "./loading.styles";
+import { LoadingContainer } from "@/components/Loading/loading.styles";
 
-export function Loading() {
+export const Loading = () => {
   return (
     <LoadingContainer data-testid="loading-container">
       <Image
@@ -13,4 +13,4 @@ export function Loading() {
       />
     </LoadingContainer>
   );
-}
+};

@@ -1,17 +1,19 @@
-import { AmburgerButton } from "./components/AmburgerButton";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
+import {
+  AmburgerButton,
+  ThemeSwitcher,
+  HireMeButton,
+  LanguageSwitcher,
+} from "@/components/TopBar/components";
 import {
   TopBarCenter,
   TopBarContainer,
   TopBarLeft,
   TopBarRight,
-} from "./topBar.styles";
-import { LinkedinIcon } from "./components/SocialIcon/icons/linkedin";
-import { GithubIcon } from "./components/SocialIcon/icons/github";
-import { HireMeButton } from "./components/HireMeButton";
-import { LanguageSwitcher } from "./components/LanguageSwitcher";
+} from "@/components/TopBar/topBar.styles";
+import { GitHub } from "@/components/TopBar/components/SocialIcon/GitHub";
+import { Linkedin } from "@/components/TopBar/components/SocialIcon/Linkedin";
 
-export function TopBar() {
+export const TopBar = () => {
   return (
     <TopBarContainer data-testid="top-bar">
       <TopBarLeft>
@@ -21,8 +23,8 @@ export function TopBar() {
       </TopBarLeft>
 
       <TopBarCenter>
-        <GithubIcon />
-        <LinkedinIcon />
+        <GitHub />
+        <Linkedin />
       </TopBarCenter>
 
       <TopBarRight>
@@ -30,4 +32,4 @@ export function TopBar() {
       </TopBarRight>
     </TopBarContainer>
   );
-}
+};

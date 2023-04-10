@@ -1,14 +1,21 @@
-import {
-  AmburgerButtonContainer,
-  SingleAmburgerBar,
-} from "./amburgerButton.styles";
+import { useMenuStore } from "@/lib/contexts/menu";
+import { AmburgerButtonContainer } from "@/components/TopBar/components/AmburgerButton/amburgerButton.styles";
 
-export function AmburgerButton() {
+export const AmburgerButton = () => {
+  const { isOpen, openMenu, closeMenu } = useMenuStore();
+  const toggleOpenMenu = () => {
+    if (isOpen) return closeMenu();
+    openMenu();
+  };
   return (
-    <AmburgerButtonContainer data-testid="amburger-button">
-      <SingleAmburgerBar />
-      <SingleAmburgerBar />
-      <SingleAmburgerBar />
+    <AmburgerButtonContainer
+      isMenuOpen={isOpen}
+      onClick={toggleOpenMenu}
+      data-testid="amburger-button"
+    >
+      <div className="first-bar" />
+      <div className="center-bar" />
+      <div className="last-bar" />
     </AmburgerButtonContainer>
   );
-}
+};

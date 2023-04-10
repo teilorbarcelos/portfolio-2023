@@ -1,10 +1,7 @@
-import { HomeContainer } from "./home.styles";
-import { TopBar } from "@/components/TopBar";
+import { HomePageContainer } from "@/pages/home.styles";
 
-export default function Home() {
-  return (
-    <HomeContainer>
-      <TopBar />
-    </HomeContainer>
-  );
-}
+const Home = () => {
+  return <HomePageContainer data-testid="home-page"></HomePageContainer>;
+};
+
+export default Home;

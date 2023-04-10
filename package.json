@@ -11,6 +11,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --coverage --coverageReporters=text",
+    "test:ci:watch": "jest --watch --coverage --coverageReporters=text",
     "editorconfig": "editorconfig-checker",
     "postinstall": "husky install"
   },

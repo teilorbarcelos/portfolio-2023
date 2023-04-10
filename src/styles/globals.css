@@ -46,6 +46,10 @@ ol {
     list-style: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* Set core body defaults */
 body {
     font-family: sans-serif;

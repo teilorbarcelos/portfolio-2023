@@ -4,14 +4,14 @@ import {
   SunIcon,
   Switch,
   ThemeSwitcherContainer,
-} from "./themeSwitcher.styles";
+} from "@/components/TopBar/components/ThemeSwitcher/themeSwitcher.styles";
 import { Theme, useThemeStore } from "@/lib/contexts/theme";
 
-export function ThemeSwitcher() {
-  const { setDark, setLight, theme } = useThemeStore();
+export const ThemeSwitcher = () => {
+  const { setDark, setLight, themeState } = useThemeStore();
 
   const handleToggle = () => {
-    if (theme === Theme.DARK) return setLight();
+    if (themeState === Theme.DARK) return setLight();
     setDark();
   };
 
@@ -23,8 +23,8 @@ export function ThemeSwitcher() {
         data-testid="theme-switcher"
       />
       <Slider className="slider" />
-      <MoonIcon theme={theme} />
-      <SunIcon theme={theme} />
+      <MoonIcon themeState={themeState} />
+      <SunIcon themeState={themeState} />
     </ThemeSwitcherContainer>
   );
-}
+};

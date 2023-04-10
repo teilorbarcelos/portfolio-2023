@@ -29,5 +29,25 @@ export const translations: Translations = {
   languageImageAlt: {
     [Language.EN]: "Brazil Flag",
     [Language.PT_BR]: "Bandeira americana",
+  },
+  about: {
+    [Language.EN]: "About",
+    [Language.PT_BR]: "Sobre",
+  },
+  projects: {
+    [Language.EN]: "Projects",
+    [Language.PT_BR]: "Projetos",
+  },
+  blog: {
+    [Language.EN]: "Blog",
+    [Language.PT_BR]: "Blog",
+  },
+  resume: {
+    [Language.EN]: "Resume",
+    [Language.PT_BR]: "Resumo",
+  },
+  contact: {
+    [Language.EN]: "Contact",
+    [Language.PT_BR]: "Contato",
   }
 };

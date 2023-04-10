@@ -4,9 +4,9 @@ import { useAuthStore, UserInfoProps } from "@/lib/contexts/auth";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Button } from "@/components/Button";
-import { LoginContainer } from "./login.styles";
+import { LoginContainer } from "@/pages/login/login.styles";
 
-export default function Login() {
+const Login = () => {
   const t = useTranslation();
   const { request } = useRequest();
   const { loggedIn } = useAuthStore();
@@ -33,4 +33,6 @@ export default function Login() {
       <Button onClick={handleLogin}>{t("login")}</Button>
     </LoginContainer>
   );
-}
+};
+
+export default Login;

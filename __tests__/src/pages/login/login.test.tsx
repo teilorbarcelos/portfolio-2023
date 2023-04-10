@@ -10,14 +10,14 @@ describe("Login component", () => {
 
   test("renders login button", () => {
     const { getByRole } = render(<Login />);
-    const loginButton = getByRole("button", { name: "Login" });
+    const loginButton = getByRole("button", { name: "SignIn" });
     expect(loginButton).toBeInTheDocument();
   });
 
   test("successful login updates auth store and redirects to home page", async () => {
     const routerPushSpy = jest.spyOn(useRouter(), "push");
     const { getByRole } = render(<Login />);
-    const loginButton = getByRole("button", { name: "Login" });
+    const loginButton = getByRole("button", { name: "SignIn" });
 
     fireEvent.click(loginButton);
 

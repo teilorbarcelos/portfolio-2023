@@ -6,13 +6,13 @@ describe("useThemeStore", () => {
     act(() => {
       useThemeStore.getState().setLight();
     });
-    expect(useThemeStore.getState().theme).toBe(Theme.LIGHT);
+    expect(useThemeStore.getState().themeState).toBe(Theme.LIGHT);
   });
 
   test("should set theme to dark when setDark is called", () => {
     act(() => {
       useThemeStore.getState().setDark();
     });
-    expect(useThemeStore.getState().theme).toBe(Theme.DARK);
+    expect(useThemeStore.getState().themeState).toBe(Theme.DARK);
   });
 });

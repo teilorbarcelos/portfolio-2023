@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Language } from "./language.constants";
+import { Language } from "@/lib/contexts/language/language.constants";
 
 interface LanguageStore {
   language: Language;
@@ -7,6 +7,6 @@ interface LanguageStore {
 }
 
 export const useLanguageStore = create<LanguageStore>((set) => ({
-  language: Language.PT_BR,
+  language: Language.EN,
   setLanguage: (language: Language) => set({ language }),
 }));

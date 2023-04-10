@@ -11,10 +11,10 @@ describe("ThemeSwitcher", () => {
 
     fireEvent.click(switcher);
 
-    expect(result.current.theme).toBe(Theme.LIGHT);
+    expect(result.current.themeState).toBe(Theme.LIGHT);
 
     fireEvent.click(switcher);
 
-    expect(result.current.theme).toBe(Theme.DARK);
+    expect(result.current.themeState).toBe(Theme.DARK);
   });
 });

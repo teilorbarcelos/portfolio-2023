@@ -1,6 +1,6 @@
 /* eslint-disable */
 import "@testing-library/jest-dom/extend-expect";
-import { mswServer } from "./src/mocks/server";
+import { mswServer } from "@/mocks/server";
 
 jest.mock("next/router", () => ({
   useRouter: jest.fn().mockReturnValue({

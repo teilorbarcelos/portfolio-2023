@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { AmburgerButtonProps } from "@/components/TopBar/components/AmburgerButton/amburgerButton.interface";
 
-export const AmburgerButtonContainer = styled.div`
+export const AmburgerButtonContainer = styled.div<AmburgerButtonProps>`
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -10,13 +11,30 @@ export const AmburgerButtonContainer = styled.div`
   justify-content: center;
   padding: 6px 5px;
   gap: 6px;
-`;
+  cursor: pointer;
 
-export const SingleAmburgerBar = styled.div`
-  background-color: ${(props) => props.theme.singleAmburgerBarColor};
-  width: 100%;
-  height: 2px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 1px;
+  .first-bar,
+  .center-bar,
+  .last-bar {
+    background-color: ${(props) => props.theme.singleAmburgerBarColor};
+    width: 100%;
+    height: 2px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 1px;
+  }
+
+  .first-bar {
+    ${(props) =>
+      props.isMenuOpen ? "transform: rotate(-45deg) translate(-5px, 6px);" : ""}
+  }
+
+  .center-bar {
+    ${(props) => (props.isMenuOpen ? "opacity: 0;" : "")}
+  }
+
+  .last-bar {
+    ${(props) =>
+      props.isMenuOpen ? "transform: rotate(45deg) translate(-5px, -6px);" : ""}
+  }
 `;

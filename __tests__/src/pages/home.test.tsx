@@ -2,11 +2,11 @@ import { render } from "@testing-library/react";
 import Home from "@/pages/index";
 
 describe("Home", () => {
-  test("renders the TopBar", () => {
+  test("renders the Home", () => {
     const { getByTestId } = render(<Home />);
 
-    const topBar = getByTestId("top-bar");
+    const home = getByTestId("home-page");
 
-    expect(topBar).toBeInTheDocument();
+    expect(home).toBeInTheDocument();
   });
 });
