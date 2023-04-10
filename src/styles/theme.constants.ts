@@ -5,23 +5,37 @@ interface ThemesConstantsProps {
   light: DefaultTheme;
 }
 
+const colorVariables = {
+  COLOR001: "#19202E",
+  COLOR002: "#D7DDE9",
+  COLOR003: "#A5B3CE",
+  COLOR004: "#FE655C",
+  COLOR005: "#f5f7fa",
+  COLOR006: "#354765",
+  COLOR007: "#fff",
+  COLOR008: "#4f6591",
+  COLOR009: "rgba(0,0,0,.1)",
+};
+
 export const themeConstants: ThemesConstantsProps = {
   dark: {
-    backgroundColor: "#19202E",
-    singleAmburgerBarColor: "#D7DDE9",
-    sliderBackgroundColor: "#A5B3CE",
-    socialIconContainerColor: "rgba(0,0,0,.1)",
-    socialIconColor: "#a5b3ce",
-    menuLinkActiveColor: "#FE655C",
-    menuLinkColor: "#a5b3ce",
+    backgroundColor: colorVariables.COLOR001,
+    singleAmburgerBarColor: colorVariables.COLOR002,
+    sliderBackgroundColor: colorVariables.COLOR003,
+    sliderButtonColor: colorVariables.COLOR002,
+    socialIconContainerColor: colorVariables.COLOR009,
+    socialIconColor: colorVariables.COLOR003,
+    menuLinkActiveColor: colorVariables.COLOR004,
+    menuLinkColor: colorVariables.COLOR003,
   },
   light: {
-    backgroundColor: "#f5f7fa",
-    singleAmburgerBarColor: "#354765",
-    sliderBackgroundColor: "#354765",
-    socialIconContainerColor: "#fff",
-    socialIconColor: "#4f6591",
-    menuLinkActiveColor: "#FE655C",
-    menuLinkColor: "#4f6591",
+    backgroundColor: colorVariables.COLOR005,
+    singleAmburgerBarColor: colorVariables.COLOR006,
+    sliderBackgroundColor: colorVariables.COLOR006,
+    sliderButtonColor: colorVariables.COLOR006,
+    socialIconContainerColor: colorVariables.COLOR007,
+    socialIconColor: colorVariables.COLOR008,
+    menuLinkActiveColor: colorVariables.COLOR004,
+    menuLinkColor: colorVariables.COLOR006,
   },
 };

@@ -42,7 +42,7 @@ export const Slider = styled.span`
     width: 20px;
     left: 2px;
     bottom: 2px;
-    background-color: ${(props) => props.theme.sliderBackgroundColor};
+    background-color: ${(props) => props.theme.sliderButtonColor};
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 50%;

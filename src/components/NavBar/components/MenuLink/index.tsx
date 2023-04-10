@@ -17,7 +17,7 @@ export const MenuLink = ({ children, path, title, testId }: MenuLinkProps) => {
       : themeConstants.light.menuLinkColor;
   return (
     <Link href={path} data-testid={testId}>
-      <MenuLinkContainer>
+      <MenuLinkContainer color={color}>
         {cloneElement(children, { fill: color })}
         <p className="title">{title}</p>
       </MenuLinkContainer>

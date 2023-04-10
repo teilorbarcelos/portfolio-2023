@@ -6,6 +6,7 @@ declare module "styled-components" {
     backgroundColor: string;
     singleAmburgerBarColor: string;
     sliderBackgroundColor: string;
+    sliderButtonColor: string;
     socialIconContainerColor: string;
     socialIconColor: string;
     menuLinkActiveColor: string;
