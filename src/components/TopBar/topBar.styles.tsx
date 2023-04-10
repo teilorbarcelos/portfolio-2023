@@ -38,6 +38,7 @@ export const TopBarRight = styled.div`
   @media screen and (max-width: 450px) {
     flex-direction: column;
     margin-top: 38px;
+    gap: 8px;
   }
 `;
 
@@ -46,5 +47,6 @@ export const MobileRightContainer = styled.div`
 
   @media screen and (max-width: 450px) {
     display: flex;
+    gap: 8px;
   }
 `;
