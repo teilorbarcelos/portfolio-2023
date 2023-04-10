@@ -48,11 +48,3 @@ export const MobileRightContainer = styled.div`
     display: flex;
   }
 `;
-
-export const MobileLeftContainer = styled.div`
-  display: none;
-
-  @media screen and (max-width: 450px) {
-    display: flex;
-  }
-`;
