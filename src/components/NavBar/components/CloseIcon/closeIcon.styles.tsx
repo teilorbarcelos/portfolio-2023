@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CloseIconContainer = styled.div`
-  margin-top: 24px;
+  margin-top: 17px;
   cursor: pointer;
   filter: brightness(.5);
 

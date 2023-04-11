@@ -18,27 +18,29 @@ export const NavBar = () => {
   };
   return (
     <NavbarContainer isOpen={isOpen} data-testid="nav-bar">
-      <MenuLink path="/" title={t("about")} testId="about-link">
-        <ProfileIcon />
-      </MenuLink>
+      <ul>
+        <MenuLink path="/" title={t("about")} testId="about-link">
+          <ProfileIcon />
+        </MenuLink>
 
-      <MenuLink path="/projects" title={t("projects")} testId="projects-link">
-        <BagIcon />
-      </MenuLink>
+        <MenuLink path="/projects" title={t("projects")} testId="projects-link">
+          <BagIcon />
+        </MenuLink>
 
-      <MenuLink path="/blog" title={t("blog")} testId="blog-link">
-        <PenIcon />
-      </MenuLink>
+        <MenuLink path="/blog" title={t("blog")} testId="blog-link">
+          <PenIcon />
+        </MenuLink>
 
-      <MenuLink path="/resume" title={t("resume")} testId="resume-link">
-        <ResumeIcon />
-      </MenuLink>
+        <MenuLink path="/resume" title={t("resume")} testId="resume-link">
+          <ResumeIcon />
+        </MenuLink>
 
-      <MenuLink path="/contact" title={t("contact")} testId="contact-link">
-        <TalkIcon />
-      </MenuLink>
+        <MenuLink path="/contact" title={t("contact")} testId="contact-link">
+          <TalkIcon />
+        </MenuLink>
 
-      <CloseIconComponent onClick={toggleOpenMenu} />
+        <CloseIconComponent onClick={toggleOpenMenu} />
+      </ul>
     </NavbarContainer>
   );
 };
