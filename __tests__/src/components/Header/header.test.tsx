@@ -1,9 +1,9 @@
-import { TopBar } from "@/components/TopBar";
+import { Header } from "@/components/Header";
 import { render, screen } from "@testing-library/react";
 
-describe("TopBar", () => {
+describe("Header", () => {
   it("should render all components", () => {
-    render(<TopBar />);
+    render(<Header />);
 
     const amburgerButton = screen.getByTestId("amburger-button");
     expect(amburgerButton).toBeInTheDocument();

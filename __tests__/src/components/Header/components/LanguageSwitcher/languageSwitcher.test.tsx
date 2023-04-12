@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent, renderHook } from "@testing-library/react";
 import { useLanguageStore } from "@/lib/contexts/language";
 import { Language } from "@/lib/contexts/language/language.constants";
-import { LanguageSwitcher } from "@/components/TopBar/components/LanguageSwitcher";
+import { LanguageSwitcher } from "@/components/Header/components/LanguageSwitcher";
 
 describe("LanguageSwitcher", () => {
   it("should switch language when clicked", () => {

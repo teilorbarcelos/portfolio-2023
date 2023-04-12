@@ -4,7 +4,7 @@ import {
   SunIcon,
   Switch,
   ThemeSwitcherContainer,
-} from "@/components/TopBar/components/ThemeSwitcher/themeSwitcher.styles";
+} from "@/components/Header/components/ThemeSwitcher/themeSwitcher.styles";
 import { Theme, useThemeStore } from "@/lib/contexts/theme";
 
 export const ThemeSwitcher = () => {

@@ -2,7 +2,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { useLanguageStore } from "@/lib/contexts/language";
 import { Language } from "@/lib/contexts/language/language.constants";
 import Image from "next/image";
-import { LanguageSwitcherContainer } from "@/components/TopBar/components/LanguageSwitcher/languageSwitcher.styles";
+import { LanguageSwitcherContainer } from "@/components/Header/components/LanguageSwitcher/languageSwitcher.styles";
 
 export const LanguageSwitcher = () => {
   const { setLanguage, language } = useLanguageStore();

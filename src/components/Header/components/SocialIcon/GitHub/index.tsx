@@ -1,5 +1,5 @@
 import { GithubIcon } from "@/components/Icons/github";
-import { SocialIcon } from "@/components/TopBar/components/SocialIcon";
+import { SocialIcon } from "@/components/Header/components/SocialIcon";
 
 export const GitHub = () => {
   return (

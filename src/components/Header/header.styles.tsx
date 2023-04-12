@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TopBarContainer = styled.nav`
+export const HeaderContainer = styled.nav`
   position: relative;
   top: 0;
   background-color: transparent;
@@ -12,13 +12,13 @@ export const TopBarContainer = styled.nav`
   justify-content: space-between;
 `;
 
-export const TopBarLeft = styled.div`
+export const HeaderLeft = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
 `;
 
-export const TopBarCenter = styled.div`
+export const HeaderCenter = styled.div`
   left: 50%;
   transform: translate(-50%, 0);
   position: absolute;
@@ -31,7 +31,7 @@ export const TopBarCenter = styled.div`
   }
 `;
 
-export const TopBarRight = styled.div`
+export const HeaderRight = styled.div`
   display: flex;
   align-items: center;
 

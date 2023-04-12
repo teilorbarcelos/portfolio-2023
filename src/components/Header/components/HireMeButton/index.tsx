@@ -1,5 +1,5 @@
 import { useTranslation } from "@/hooks/useTranslation";
-import { HireMeButtonContainer } from "@/components/TopBar/components/HireMeButton/hireMeButton.styles";
+import { HireMeButtonContainer } from "@/components/Header/components/HireMeButton/hireMeButton.styles";
 import Link from "next/link";
 
 export const HireMeButton = () => {

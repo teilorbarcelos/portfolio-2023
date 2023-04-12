@@ -16,11 +16,11 @@ describe("App component", () => {
 
     result.current.showLoading();
 
-    const topBarElement = screen.getByTestId("top-bar");
+    const headerElement = screen.getByTestId("top-bar");
     const navBarElement = screen.getByTestId("nav-bar");
     const loadingElement = screen.queryByTestId("loading");
 
-    expect(topBarElement).toBeInTheDocument();
+    expect(headerElement).toBeInTheDocument();
     expect(navBarElement).toBeInTheDocument();
     expect(loadingElement).not.toBeInTheDocument();
   });

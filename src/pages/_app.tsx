@@ -6,7 +6,7 @@ import { mswServer } from "@/mocks/server";
 import { useThemeStore } from "@/lib/contexts/theme";
 import { ThemeProvider } from "styled-components";
 import { themeConstants } from "@/styles/theme.constants";
-import { TopBar } from "@/components/TopBar";
+import { Header } from "@/components/Header";
 import { NavBar } from "@/components/NavBar";
 import { GlobalStyle } from "@/styles/globalStyle";
 
@@ -20,7 +20,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={themeConstants[themeState]}>
       {isLoading && <Loading />}
       <GlobalStyle />
-      <TopBar />
+      <Header />
       <NavBar />
       <Component {...pageProps} />
     </ThemeProvider>

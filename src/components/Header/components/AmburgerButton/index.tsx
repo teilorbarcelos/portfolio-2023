@@ -1,5 +1,5 @@
 import { useMenuStore } from "@/lib/contexts/menu";
-import { AmburgerButtonContainer } from "@/components/TopBar/components/AmburgerButton/amburgerButton.styles";
+import { AmburgerButtonContainer } from "@/components/Header/components/AmburgerButton/amburgerButton.styles";
 
 export const AmburgerButton = () => {
   const { isOpen, openMenu, closeMenu } = useMenuStore();

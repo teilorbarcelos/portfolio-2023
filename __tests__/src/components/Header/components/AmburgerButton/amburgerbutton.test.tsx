@@ -1,6 +1,6 @@
 import { render, fireEvent, renderHook } from "@testing-library/react";
 import { useMenuStore } from "@/lib/contexts/menu";
-import { AmburgerButton } from "@/components/TopBar/components/AmburgerButton";
+import { AmburgerButton } from "@/components/Header/components/AmburgerButton";
 
 describe("AmburgerButton", () => {
   it("should render properly", () => {

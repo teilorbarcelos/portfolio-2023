@@ -1,6 +1,6 @@
 import { cloneElement } from "react";
-import { SocialIconProps } from "@/components/TopBar/components/SocialIcon/socialIcon.interface";
-import { SocialIconContainer } from "@/components/TopBar/components/SocialIcon/socialIcon.styles";
+import { SocialIconProps } from "@/components/Header/components/SocialIcon/socialIcon.interface";
+import { SocialIconContainer } from "@/components/Header/components/SocialIcon/socialIcon.styles";
 import { Theme, useThemeStore } from "@/lib/contexts/theme";
 import { themeConstants } from "@/styles/theme.constants";
 

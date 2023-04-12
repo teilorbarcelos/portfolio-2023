@@ -1,5 +1,5 @@
 import { LinkedinIcon } from "@/components/Icons/linkedin";
-import { SocialIcon } from "@/components/TopBar/components/SocialIcon";
+import { SocialIcon } from "@/components/Header/components/SocialIcon";
 
 export const Linkedin = () => {
   return (

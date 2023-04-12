@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent, renderHook } from "@testing-library/react";
 import { Theme, useThemeStore } from "@/lib/contexts/theme";
-import { ThemeSwitcher } from "@/components/TopBar/components/ThemeSwitcher";
+import { ThemeSwitcher } from "@/components/Header/components/ThemeSwitcher";
 
 describe("ThemeSwitcher", () => {
   it("should toggle theme on click", () => {

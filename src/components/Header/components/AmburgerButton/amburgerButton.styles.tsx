@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { AmburgerButtonProps } from "@/components/TopBar/components/AmburgerButton/amburgerButton.interface";
+import { AmburgerButtonProps } from "@/components/Header/components/AmburgerButton/amburgerButton.interface";
 
 export const AmburgerButtonContainer = styled.div<AmburgerButtonProps>`
   width: 30px;
