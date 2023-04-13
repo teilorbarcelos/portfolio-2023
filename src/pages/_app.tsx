@@ -22,7 +22,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       <GlobalStyle />
       <Header />
       <NavBar />
-      <Component {...pageProps} />
+      <main>
+        <Component {...pageProps} />
+      </main>
     </ThemeProvider>
   );
 };

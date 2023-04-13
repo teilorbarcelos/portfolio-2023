@@ -16,6 +16,9 @@ const colorVariables = {
   COLOR008: "#4f6591",
   COLOR009: "rgba(0,0,0,0.1)",
   COLOR010: "rgba(0,0,0,0.9)",
+  COLOR011: "#121822",
+  COLOR012: "#1E2738",
+  COLOR013: "#629FEB"
 };
 
 export const themeConstants: ThemesConstantsProps = {
@@ -29,6 +32,10 @@ export const themeConstants: ThemesConstantsProps = {
     menuLinkActiveColor: colorVariables.COLOR004,
     menuLinkColor: colorVariables.COLOR003,
     navBarMobileContainer: colorVariables.COLOR010,
+    titlesColor: colorVariables.COLOR007,
+    boxesColor: colorVariables.COLOR012,
+    pTextColor: colorVariables.COLOR003,
+    aLinksColor: colorVariables.COLOR013
   },
   light: {
     backgroundColor: colorVariables.COLOR005,
@@ -40,5 +47,9 @@ export const themeConstants: ThemesConstantsProps = {
     menuLinkActiveColor: colorVariables.COLOR004,
     menuLinkColor: colorVariables.COLOR006,
     navBarMobileContainer: colorVariables.COLOR007,
+    titlesColor: colorVariables.COLOR011,
+    boxesColor: colorVariables.COLOR007,
+    pTextColor: colorVariables.COLOR006,
+    aLinksColor: colorVariables.COLOR013
   },
 };

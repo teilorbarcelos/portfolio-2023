@@ -19,8 +19,6 @@ export const AmburgerButtonContainer = styled.div<AmburgerButtonProps>`
     background-color: ${(props) => props.theme.singleAmburgerBarColor};
     width: 100%;
     height: 2px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     border-radius: 1px;
   }
 

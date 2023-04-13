@@ -30,8 +30,6 @@ export const Slider = styled.span`
   right: 0;
   bottom: 0;
   background-color: transparent;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
   border-radius: 34px;
   outline: 2px solid ${(props) => props.theme.sliderBackgroundColor};
 
@@ -43,8 +41,6 @@ export const Slider = styled.span`
     left: 2px;
     bottom: 2px;
     background-color: ${(props) => props.theme.sliderButtonColor};
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
     border-radius: 50%;
     z-index: 1;
   }

@@ -14,7 +14,8 @@
     "test:ci:watch": "jest --watch --coverage --coverageReporters=text",
     "editorconfig": "editorconfig-checker",
     "postinstall": "husky install",
-    "json-server": "json-server --watch ./src/mocks/jsonServer/static-props-mock.json --port 3001"
+    "json-server": "json-server --watch ./src/mocks/jsonServer/static-props-mock.json --port 3001",
+    "super": "json-server --watch ./src/mocks/jsonServer/static-props-mock.json --port 3001 | next dev"
   },
   "lint-staged": {
     "*.js,*.jsx,*.ts,*.tsx": [

@@ -11,11 +11,10 @@ export const NavbarContainer = styled.nav<NavBarProps>`
     padding: 18px 0;
     border-radius: 6px;
     overflow: hidden;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
     gap: 7px;
+    z-index: 2;
 
-    position: absolute;
+    position: fixed;
     left: 16px;
     top: 50%;
     transform: ${(props) =>

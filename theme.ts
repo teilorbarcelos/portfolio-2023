@@ -12,6 +12,10 @@ declare module "styled-components" {
     menuLinkActiveColor: string;
     menuLinkColor: string;
     navBarMobileContainer: string;
+    titlesColor: string;
+    boxesColor: string;
+    pTextColor: string;
+    aLinksColor: string;
   }
 }
 

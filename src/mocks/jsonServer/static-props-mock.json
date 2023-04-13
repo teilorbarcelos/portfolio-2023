@@ -1,0 +1,10 @@
+{
+    "home": {
+        "header": {
+            "profileImageUrl": "https://github.com/teilorbarcelos.png",
+            "profileName": "Teilor Souza Barcelos",
+            "headerTextEN": "<p>Hi! I’m a Senior Developer with more than ten years of experience working in mobile banking apps. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Welcome to my online portfolio! Check out my <a href=\"/projects\">latest projects and case studies</a>.</p>",
+            "headerTextPT": "<p>Olá! I’m a Senior Developer with more than ten years of experience working in mobile banking apps. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Welcome to my online portfolio! Check out my <a href=\"/projects\">latest projects and case studies</a>.</p>"
+        }
+    }
+}

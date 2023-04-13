@@ -5,4 +5,5 @@ export const HomePageContainer = styled.section`
   flex-direction: column;
   align-items: center;
   background: transparent;
+  padding-top: 10px;
 `;
