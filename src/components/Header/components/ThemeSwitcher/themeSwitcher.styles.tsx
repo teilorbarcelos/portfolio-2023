@@ -42,6 +42,8 @@ export const Slider = styled.span`
     bottom: 2px;
     background-color: ${(props) => props.theme.sliderButtonColor};
     border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 1;
   }
 `;

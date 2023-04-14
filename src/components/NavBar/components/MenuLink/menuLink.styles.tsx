@@ -7,6 +7,8 @@ export const MenuLinkContainer = styled.li<{color: string}>`
   align-items: center;
   gap: 4px;
   padding: 7px;
+  -webkit-transition: unset;
+  transition: unset;
 
   &:hover {
     filter: brightness(1.5);

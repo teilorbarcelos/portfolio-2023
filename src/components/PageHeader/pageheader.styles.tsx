@@ -8,6 +8,7 @@ export const PageHeaderContainer = styled.section`
   padding: 0 48px 48px;
   border-radius: 8px;
   background: ${(props) => props.theme.boxesColor};
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
 
   display: flex;
   flex-direction: column;
