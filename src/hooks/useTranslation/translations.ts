@@ -49,5 +49,9 @@ export const translations: Translations = {
   contact: {
     [Language.EN]: "Contact",
     [Language.PT_BR]: "Contato",
-  }
+  },
+  viewResume: {
+    [Language.EN]: "View Resume",
+    [Language.PT_BR]: "Ver Resumo",
+  },
 };

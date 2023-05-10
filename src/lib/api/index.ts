@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://backend.example.com/api";
+export const baseURL = "https://back-teilorwebdev.vercel.app/v1";
 
 const api = axios.create({
   baseURL,

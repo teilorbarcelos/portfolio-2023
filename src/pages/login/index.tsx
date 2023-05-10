@@ -4,7 +4,7 @@ import { useAuthStore, UserInfoProps } from "@/lib/contexts/auth";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Button } from "@/components/Button";
-import { LoginContainer } from "@/pages/login/login.styles";
+import { LoginContainer } from "@/styles/pages/login.styles";
 
 const Login = () => {
   const t = useTranslation();

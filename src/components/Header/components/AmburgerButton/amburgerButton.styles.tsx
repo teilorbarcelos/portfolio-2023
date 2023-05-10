@@ -12,27 +12,33 @@ export const AmburgerButtonContainer = styled.div<AmburgerButtonProps>`
   padding: 6px 5px;
   gap: 6px;
   cursor: pointer;
+`;
 
-  .first-bar,
-  .center-bar,
-  .last-bar {
-    background-color: ${(props) => props.theme.singleAmburgerBarColor};
-    width: 100%;
-    height: 2px;
-    border-radius: 1px;
-  }
+export const FirstBar = styled.div<AmburgerButtonProps>`
+  background-color: ${(props) => props.theme.singleAmburgerBarColor};
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
 
-  .first-bar {
-    ${(props) =>
-      props.isMenuOpen ? "transform: rotate(-45deg) translate(-5px, 6px);" : ""}
-  }
+  ${(props) =>
+    props.isMenuOpen ? "transform: rotate(-45deg) translate(-5px, 6px);" : ""}
+`;
 
-  .center-bar {
-    ${(props) => (props.isMenuOpen ? "opacity: 0;" : "")}
-  }
+export const CenterBar = styled.div<AmburgerButtonProps>`
+  background-color: ${(props) => props.theme.singleAmburgerBarColor};
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
 
-  .last-bar {
-    ${(props) =>
-      props.isMenuOpen ? "transform: rotate(45deg) translate(-5px, -6px);" : ""}
-  }
+  ${(props) => (props.isMenuOpen ? "opacity: 0;" : "")}
+`;
+
+export const LastBar = styled.div<AmburgerButtonProps>`
+  background-color: ${(props) => props.theme.singleAmburgerBarColor};
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+
+  ${(props) =>
+    props.isMenuOpen ? "transform: rotate(45deg) translate(-5px, -6px);" : ""}
 `;

@@ -27,4 +27,10 @@ describe("PageHeader", () => {
     ).toBeInTheDocument();
     expect(getByText(headerMock.headerTextPT)).toBeInTheDocument();
   });
+
+  it("should render the view resume button", () => {
+    const { getByTestId } = render(<PageHeader {...headerMock} />);
+
+    expect(getByTestId("view-resume-button")).toBeInTheDocument();
+  });
 });

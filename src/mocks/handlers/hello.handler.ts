@@ -1,7 +1,8 @@
+import { baseURL } from '@/lib/api';
 import { rest } from 'msw';
 
 export const helloHandler = [
-  rest.get('https://backend.example.com/api/hello', (req, res, ctx) => {
+  rest.get(`${baseURL}/hello`, (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({ name: "John Doe" }),

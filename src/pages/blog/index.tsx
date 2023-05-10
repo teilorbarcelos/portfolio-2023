@@ -1,4 +1,4 @@
-import { BlogPageContainer } from "@/pages/blog/blog.styles";
+import { BlogPageContainer } from "@/styles/pages/blog.styles";
 
 const Blog = () => {
   return <BlogPageContainer data-testid="blog-page"></BlogPageContainer>;

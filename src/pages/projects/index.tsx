@@ -1,4 +1,4 @@
-import { ProjectsPageContainer } from "@/pages/projects/projects.styles";
+import { ProjectsPageContainer } from "@/styles/pages/projects.styles";
 
 const Projects = () => {
   return (

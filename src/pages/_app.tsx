@@ -14,7 +14,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   const { themeState } = useThemeStore();
   const { isLoading } = useLoadingStore();
 
-  if (process.env.NODE_ENV !== "production") mswServer.listen();
+  if (process.env.NODE_ENV === "test") mswServer.listen();
 
   return (
     <ThemeProvider theme={themeConstants[themeState]}>

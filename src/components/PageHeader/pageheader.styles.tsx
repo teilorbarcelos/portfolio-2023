@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const PageHeaderContainer = styled.section`
-  position: relative;
-  background-color: #1e2738;
+  width: 100%;
   max-width: 980px;
   margin-top: 80px;
   padding: 0 48px 48px;
@@ -45,5 +44,9 @@ export const PageHeaderContainer = styled.section`
     a {
       color: ${(props) => props.theme.aLinksColor};
     }
+  }
+
+  .button {
+    margin-top: 24px;
   }
 `;

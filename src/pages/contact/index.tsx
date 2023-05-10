@@ -1,4 +1,4 @@
-import { ContactPageContainer } from "@/pages/contact/contact.styles";
+import { ContactPageContainer } from "@/styles/pages/contact.styles";
 
 const Contact = () => {
   return (

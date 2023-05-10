@@ -1,5 +1,5 @@
 import { useMenuStore } from "@/lib/contexts/menu";
-import { AmburgerButtonContainer } from "@/components/Header/components/AmburgerButton/amburgerButton.styles";
+import { AmburgerButtonContainer, CenterBar, FirstBar, LastBar } from "@/components/Header/components/AmburgerButton/amburgerButton.styles";
 
 export const AmburgerButton = () => {
   const { isOpen, openMenu, closeMenu } = useMenuStore();
@@ -13,9 +13,9 @@ export const AmburgerButton = () => {
       onClick={toggleOpenMenu}
       data-testid="amburger-button"
     >
-      <div className="first-bar" />
-      <div className="center-bar" />
-      <div className="last-bar" />
+      <FirstBar isMenuOpen={isOpen} />
+      <CenterBar isMenuOpen={isOpen} />
+      <LastBar isMenuOpen={isOpen} />
     </AmburgerButtonContainer>
   );
 };

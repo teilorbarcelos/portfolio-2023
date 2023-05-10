@@ -5,7 +5,7 @@ interface ThemesConstantsProps {
   light: DefaultTheme;
 }
 
-const colorVariables = {
+export const colorVariables = {
   COLOR001: "#19202E",
   COLOR002: "#D7DDE9",
   COLOR003: "#A5B3CE",
@@ -18,7 +18,8 @@ const colorVariables = {
   COLOR010: "rgba(0,0,0,0.9)",
   COLOR011: "#121822",
   COLOR012: "#1E2738",
-  COLOR013: "#629FEB"
+  COLOR013: "#629FEB",
+  COLOR014: "#465981"
 };
 
 export const themeConstants: ThemesConstantsProps = {

@@ -6,3 +6,8 @@ export interface Translations {
     [Language.PT_BR]: string;
   };
 }
+
+export interface TranslatedProp {
+  PT_BR: string | null;
+  EN: string | null;
+}
