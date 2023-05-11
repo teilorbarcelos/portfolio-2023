@@ -18,34 +18,36 @@ export const PageHeader = ({
   const t = useTranslation();
   return (
     <PageHeaderContainer>
-      <Image
-        width={160}
-        height={160}
-        src={profileImageUrl}
-        alt={`${profileName} profile image`}
-        className="profile-image"
-        data-testid="profile-image"
-        priority
-      />
-      <p className="profile-name" data-testid="profile-name">
-        {profileName}
-      </p>
-      <div
-        className="header-text"
-        data-testid="header-text"
-        dangerouslySetInnerHTML={{
-          __html: language === Language.EN ? headerTextEN : headerTextPT,
-        }}
-      />
-      <Link href="/resume">
-        <Button
-          type="button"
-          className="button"
-          data-testid="view-resume-button"
-        >
-          <p>{t("viewResume")}</p> <BiRightArrowAlt />
-        </Button>
-      </Link>
+      <div className="content">
+        <Image
+          width={160}
+          height={160}
+          src={profileImageUrl}
+          alt={`${profileName} profile image`}
+          className="profile-image"
+          data-testid="profile-image"
+          priority
+        />
+        <p className="profile-name" data-testid="profile-name">
+          {profileName}
+        </p>
+        <div
+          className="header-text"
+          data-testid="header-text"
+          dangerouslySetInnerHTML={{
+            __html: language === Language.EN ? headerTextEN : headerTextPT,
+          }}
+        />
+        <Link href="/resume">
+          <Button
+            type="button"
+            className="button"
+            data-testid="view-resume-button"
+          >
+            <p>{t("viewResume")}</p> <BiRightArrowAlt />
+          </Button>
+        </Link>
+      </div>
     </PageHeaderContainer>
   );
 };

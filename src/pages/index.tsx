@@ -1,7 +1,6 @@
 import api from "@/lib/api";
 import { GetStaticProps } from "next";
 import { PageHeader } from "@/components/PageHeader";
-import { PageHeaderProps } from "@/components/PageHeader/pageHeader.interface";
 import { HomePageContainer } from "@/styles/pages/home.styles";
 import { TranslatedProp } from "@/hooks/useTranslation/translations.interface";
 
