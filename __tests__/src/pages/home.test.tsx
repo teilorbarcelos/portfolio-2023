@@ -19,20 +19,26 @@ describe("Home", () => {
   });
 
   test("Should have the right texts in header", () => {
-    const {result} = renderHook(() => useLanguageStore())
+    const { result } = renderHook(() => useLanguageStore());
     const { getByTestId } = render(<Home {...homePageMock} />);
 
     const headerText = getByTestId("header-text");
     const profileImage = getByTestId("profile-image");
     const profileName = getByTestId("profile-name");
 
-    expect(headerText).toContainHTML(homePageMock.hello_message.EN as string);
-    expect(getNextImageUrl(profileImage.getAttribute("src") as string)).toBe(homePageMock.imageUrl);
-    expect(profileName).toContainHTML(homePageMock.name as string);
+    expect(headerText).toContainHTML(
+      homePageMock.profile.hello_message.EN as string
+    );
+    expect(getNextImageUrl(profileImage.getAttribute("src") as string)).toBe(
+      homePageMock.profile.imageUrl
+    );
+    expect(profileName).toContainHTML(homePageMock.profile.name as string);
 
-    act(() => result.current.setLanguage(Language.PT_BR))
+    act(() => result.current.setLanguage(Language.PT_BR));
 
-    expect(headerText).toContainHTML(homePageMock.hello_message.PT_BR as string);
+    expect(headerText).toContainHTML(
+      homePageMock.profile.hello_message.PT_BR as string
+    );
   });
 
   test("Should getStaticProps to get the right props", async () => {

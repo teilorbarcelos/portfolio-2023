@@ -3,11 +3,12 @@ import { GetStaticProps } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { HomePageContainer } from "@/styles/pages/home.styles";
 import { TranslatedProp } from "@/hooks/useTranslation/translations.interface";
+import { ProjectsGrid } from "@/components/ProjectsGrid";
 
-export interface HomePageProps {
+interface ProfileReturnProps {
   id: string;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt: Date | string;
+  updatedAt: Date | string;
   name: string | null;
   job: TranslatedProp;
   phone_number: string | null;
@@ -23,6 +24,31 @@ export interface HomePageProps {
   imageUrl: string | null;
 }
 
+interface StackProps {
+  id: string;
+  createdAt: Date | string;
+  updatedAt: Date | string;
+  name: string;
+  image: string;
+}
+
+interface ProjectReturnProps {
+  id: string;
+  createdAt: Date | string;
+  updatedAt: Date | string;
+  title: TranslatedProp;
+  slug: string;
+  imageUrl: string;
+  leadingText: TranslatedProp;
+  contentText: TranslatedProp;
+  stacks: StackProps[];
+}
+
+export interface HomePageProps {
+  profile: ProfileReturnProps;
+  projects: ProjectReturnProps[];
+}
+
 interface StaticHomePageProps {
   props: HomePageProps;
 }
@@ -31,11 +57,13 @@ const Home = (data: HomePageProps) => {
   return (
     <HomePageContainer data-testid="home-page">
       <PageHeader
-        headerTextEN={data.hello_message.EN ?? ""}
-        headerTextPT={data.hello_message.PT_BR ?? ""}
-        profileImageUrl={data.imageUrl ?? ""}
-        profileName={data.name ?? ""}
+        headerTextEN={data.profile.hello_message.EN ?? ""}
+        headerTextPT={data.profile.hello_message.PT_BR ?? ""}
+        profileImageUrl={data.profile.imageUrl ?? ""}
+        profileName={data.profile.name ?? ""}
       />
+
+      <ProjectsGrid />
     </HomePageContainer>
   );
 };

@@ -27,11 +27,6 @@ export const PageHeaderContainer = styled.section`
 
     .profile-name {
       margin-top: 90px;
-
-      font-weight: 900;
-      font-size: 28px;
-      line-height: 34px;
-      color: ${(props) => props.theme.titlesColor};
     }
 
     .header-text {

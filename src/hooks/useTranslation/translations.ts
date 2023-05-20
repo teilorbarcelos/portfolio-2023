@@ -54,4 +54,16 @@ export const translations: Translations = {
     [Language.EN]: "View Resume",
     [Language.PT_BR]: "Ver Resumo",
   },
+  projectsHomeTitle: {
+    [Language.EN]: "Featured Projects",
+    [Language.PT_BR]: "Projetos em destaque",
+  },
+  projectsHomeLeading: {
+    [Language.EN]: "Here you will be able to see my study and own projects, thus knowing a little of my work.",
+    [Language.PT_BR]: "Aqui você poderá ver meus projetos próprios e de estudo, conhecendo, assim, um pouco do meu trabalho.",
+  },
+  moreProjects: {
+    [Language.EN]: "More Projects",
+    [Language.PT_BR]: "Mais Projetos",
+  },
 };

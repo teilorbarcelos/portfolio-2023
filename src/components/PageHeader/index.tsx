@@ -7,6 +7,9 @@ import { Button } from "../Button";
 import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { useTranslation } from "@/hooks/useTranslation";
+import { BlockTitle } from "../BlockTitle";
+import { BlockText } from "../BlockText/blockText.styles";
+import { BlockRedirectButton } from "../BlockRedirectButton";
 
 export const PageHeader = ({
   profileImageUrl,
@@ -28,25 +31,20 @@ export const PageHeader = ({
           data-testid="profile-image"
           priority
         />
-        <p className="profile-name" data-testid="profile-name">
-          {profileName}
-        </p>
-        <div
-          className="header-text"
+        <div className="profile-name" data-testid="profile-name">
+          <BlockTitle>{profileName}</BlockTitle>
+        </div>
+        <BlockText
           data-testid="header-text"
           dangerouslySetInnerHTML={{
             __html: language === Language.EN ? headerTextEN : headerTextPT,
           }}
         />
-        <Link href="/resume">
-          <Button
-            type="button"
-            className="button"
-            data-testid="view-resume-button"
-          >
-            <p>{t("viewResume")}</p> <BiRightArrowAlt />
-          </Button>
-        </Link>
+        <BlockRedirectButton
+          href="/resume"
+          text={t("viewResume")}
+          testId="view-resume-button"
+        />
       </div>
     </PageHeaderContainer>
   );
