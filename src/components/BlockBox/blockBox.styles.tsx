@@ -24,4 +24,8 @@ export const BlockBoxContent = styled.div`
   .button {
     margin-top: ${rem(24)};
   }
+
+  @media screen and (max-width: 768px) {
+    padding: ${rem(24)};
+  }
 `;

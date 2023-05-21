@@ -49,5 +49,9 @@ export const PageHeaderContainer = styled.section`
     .button {
       margin-top: ${rem(24)};
     }
+
+    @media screen and (max-width: 768px) {
+    padding: 0 ${rem(16)} ${rem(36)};
+    }
   }
 `;

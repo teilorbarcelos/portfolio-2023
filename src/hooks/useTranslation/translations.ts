@@ -66,4 +66,8 @@ export const translations: Translations = {
     [Language.EN]: "More Projects",
     [Language.PT_BR]: "Mais Projetos",
   },
+  viewMore: {
+    [Language.EN]: "View more",
+    [Language.PT_BR]: "Ver mais",
+  }
 };
