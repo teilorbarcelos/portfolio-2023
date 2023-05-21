@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
 export const LoadingContainer = styled.div`
   position: fixed;
-  inset: 0px;
+  inset: 0;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -11,6 +12,6 @@ export const LoadingContainer = styled.div`
   z-index: 9999;
 
   .loadingImg {
-    width: 70px;
+    width: ${rem(70)};
   }
 `;

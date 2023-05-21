@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavBarProps } from "@/components/NavBar/navBar.interface";
+import { rem } from "@/hooks/utils";
 
 export const NavbarContainer = styled.nav<NavBarProps>`
   ul {
@@ -8,24 +9,24 @@ export const NavbarContainer = styled.nav<NavBarProps>`
     align-items: center;
     background: ${(props) => props.theme.socialIconContainerColor};
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
-    padding: 18px 0;
-    border-radius: 6px;
+    padding: ${rem(18)} 0;
+    border-radius: ${rem(6)};
     overflow: hidden;
-    gap: 7px;
+    gap: ${rem(7)};
     z-index: 2;
 
     position: fixed;
-    left: 16px;
+    left: ${rem(16)};
     top: 50%;
     transform: ${(props) =>
       props.isOpen ? "translate(0, -50%)" : "translate(-140%, -50%)"};
 
-    width: 72px;
+    width: ${rem(72)};
 
     @media screen and (max-width: 450px) {
       flex-direction: row;
       justify-content: space-around;
-      padding: 10px 0;
+      padding: ${rem(10)} 0;
       border-radius: 0;
       background: ${(props) => props.theme.navBarMobileContainer};
       box-shadow: 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.05);

@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { HomePageContainer } from "@/styles/pages/home.styles";
 import { TranslatedProp } from "@/hooks/useTranslation/translations.interface";
-import { ProjectsGrid } from "@/components/ProjectsGrid";
+import { ProjectsBox } from "@/components/ProjectsBox";
 
 interface ProfileReturnProps {
   id: string;
@@ -24,7 +24,7 @@ interface ProfileReturnProps {
   imageUrl: string | null;
 }
 
-interface StackProps {
+export interface StackProps {
   id: string;
   createdAt: Date | string;
   updatedAt: Date | string;
@@ -63,7 +63,7 @@ const Home = (data: HomePageProps) => {
         profileName={data.profile.name ?? ""}
       />
 
-      <ProjectsGrid />
+      <ProjectsBox projects={data.projects} />
     </HomePageContainer>
   );
 };

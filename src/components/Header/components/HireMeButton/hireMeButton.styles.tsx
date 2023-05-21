@@ -1,16 +1,17 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
 export const HireMeButtonContainer = styled.button`
-  height: 40px;
+  height: ${rem(40)};
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 21px;
-  border-radius: 20px;
+  padding: ${rem(11)} ${rem(21)};
+  border-radius: ${rem(20)};
   color: white;
   font-family: Inter, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: ${rem(14)};
+  line-height: ${rem(21)};
   font-weight: bold;
   background-color: #fe655c;
   border: none;

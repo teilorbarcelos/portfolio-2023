@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
 interface IconProps {
   themeState: string;
@@ -7,8 +8,8 @@ interface IconProps {
 export const ThemeSwitcherContainer = styled.label`
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 24px;
+  width: ${rem(50)};
+  height: ${rem(24)};
   cursor: pointer;
 `;
 
@@ -18,7 +19,7 @@ export const Switch = styled.input`
   height: 0;
 
   &:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(${rem(26)});
   }
 `;
 
@@ -30,16 +31,16 @@ export const Slider = styled.span`
   right: 0;
   bottom: 0;
   background-color: transparent;
-  border-radius: 34px;
-  outline: 2px solid ${(props) => props.theme.sliderBackgroundColor};
+  border-radius: ${rem(34)};
+  outline: ${rem(2)} solid ${(props) => props.theme.sliderBackgroundColor};
 
   &:before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
-    left: 2px;
-    bottom: 2px;
+    height: ${rem(20)};
+    width: ${rem(20)};
+    left: ${rem(2)};
+    bottom: ${rem(2)};
     background-color: ${(props) => props.theme.sliderButtonColor};
     border-radius: 50%;
     -webkit-transition: 0.5s;
@@ -50,10 +51,10 @@ export const Slider = styled.span`
 
 export const SunIcon = styled.span<IconProps>`
   position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 16px;
-  height: 16px;
+  top: ${rem(4)};
+  right: ${rem(4)};
+  width: ${rem(16)};
+  height: ${rem(16)};
   background-image: url("/icons/sun-icon.svg");
   background-size: cover;
   opacity: ${({ themeState }) => (themeState === "dark" ? 1 : 0)};
@@ -62,10 +63,10 @@ export const SunIcon = styled.span<IconProps>`
 
 export const MoonIcon = styled.span<IconProps>`
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 16px;
-  height: 16px;
+  top: ${rem(4)};
+  left: ${rem(4)};
+  width: ${rem(16)};
+  height: ${rem(16)};
   background-image: url("/icons/moon-icon.svg");
   background-size: cover;
   opacity: ${({ themeState }) => (themeState === "light" ? 1 : 0)};

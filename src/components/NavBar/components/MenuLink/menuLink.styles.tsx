@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
-export const MenuLinkContainer = styled.li<{color: string}>`
+export const MenuLinkContainer = styled.li<{ color: string }>`
   background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  padding: 7px;
+  gap: ${rem(4)};
+  padding: ${rem(7)};
   -webkit-transition: unset;
   transition: unset;
 
@@ -15,8 +16,8 @@ export const MenuLinkContainer = styled.li<{color: string}>`
   }
 
   .title {
-    font-size: 11px;
-    line-height: 16px;
+    font-size: ${rem(11)};
+    line-height: ${rem(16)};
     text-transform: uppercase;
     color: ${(props) => props.color};
   }

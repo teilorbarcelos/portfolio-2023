@@ -3,8 +3,11 @@ import { BlockTitle } from "../BlockTitle";
 import { BlockText } from "../BlockText/blockText.styles";
 import { BlockBox } from "../BlockBox";
 import { BlockRedirectButton } from "../BlockRedirectButton";
+import { ProjectsGrid } from "./projectsBox.styles";
+import { ProjectsBoxProps } from "./projectsBox.interface";
+import { ProjectCard } from "./ProjectCard";
 
-export const ProjectsGrid = () => {
+export const ProjectsBox = (data: ProjectsBoxProps) => {
   const t = useTranslation();
   return (
     <BlockBox marginTop="40px">
@@ -16,6 +19,12 @@ export const ProjectsGrid = () => {
           __html: `<p>${t("projectsHomeLeading")}</p>`,
         }}
       />
+
+      <ProjectsGrid>
+        {data.projects.map((project) => (
+          <ProjectCard {...project} key={project.id} />
+        ))}
+      </ProjectsGrid>
 
       <BlockRedirectButton
         href="/projects"

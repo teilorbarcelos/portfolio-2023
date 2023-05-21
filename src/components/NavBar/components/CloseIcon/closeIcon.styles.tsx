@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
 export const CloseIconContainer = styled.div`
-  margin-top: 17px;
+  margin-top: ${rem(17)};
   cursor: pointer;
-  filter: brightness(.5);
+  filter: brightness(0.5);
 
   &:hover {
     filter: brightness(1.5);

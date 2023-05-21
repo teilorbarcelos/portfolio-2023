@@ -1,15 +1,16 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
 export const PageHeaderContainer = styled.section`
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: ${rem(16)};
+  padding-right: ${rem(16)};
 
   .content {
     width: 100%;
-    max-width: 980px;
-    margin-top: 80px;
-    padding: 0 48px 48px;
-    border-radius: 8px;
+    max-width: ${rem(980)};
+    margin-top: ${rem(80)};
+    padding: 0 ${rem(48)} ${rem(48)};
+    border-radius: ${rem(8)};
     background: ${(props) => props.theme.boxesColor};
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
 
@@ -21,20 +22,20 @@ export const PageHeaderContainer = styled.section`
       position: absolute;
       left: 50%;
       transform: translate(-50%, -50%);
-      border: 8px solid ${(props) => props.theme.boxesColor};
+      border: ${rem(8)} solid ${(props) => props.theme.boxesColor};
       border-radius: 50%;
     }
 
     .profile-name {
-      margin-top: 90px;
+      margin-top: ${rem(90)};
     }
 
     .header-text {
-      margin-top: 16px;
+      margin-top: ${rem(16)};
       text-align: center;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: ${rem(16)};
+      line-height: ${rem(24)};
 
       p {
         color: ${(props) => props.theme.pTextColor};
@@ -46,7 +47,7 @@ export const PageHeaderContainer = styled.section`
     }
 
     .button {
-      margin-top: 24px;
+      margin-top: ${rem(24)};
     }
   }
 `;

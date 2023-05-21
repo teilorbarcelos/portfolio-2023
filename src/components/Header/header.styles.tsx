@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { rem } from "@/hooks/utils";
 
 export const HeaderContainer = styled.nav`
   position: relative;
   top: 0;
   background-color: transparent;
   width: 100%;
-  padding: 0 24px;
-  height: 60px;
+  padding: 0 ${rem(24)};
+  height: ${rem(60)};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +16,7 @@ export const HeaderContainer = styled.nav`
 export const HeaderLeft = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: ${rem(20)};
 `;
 
 export const HeaderCenter = styled.div`
@@ -24,7 +25,7 @@ export const HeaderCenter = styled.div`
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 12.5px;
+  gap: ${rem(12.5)};
 
   @media screen and (max-width: 450px) {
     display: none;
@@ -37,8 +38,8 @@ export const HeaderRight = styled.div`
 
   @media screen and (max-width: 450px) {
     flex-direction: column;
-    margin-top: 38px;
-    gap: 8px;
+    margin-top: ${rem(38)};
+    gap: ${rem(8)};
   }
 `;
 
@@ -47,6 +48,6 @@ export const MobileRightContainer = styled.div`
 
   @media screen and (max-width: 450px) {
     display: flex;
-    gap: 8px;
+    gap: ${rem(8)};
   }
 `;
