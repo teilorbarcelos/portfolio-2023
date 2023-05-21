@@ -25,7 +25,7 @@ export const ProjectCard = (data: ProjectProps) => {
 
       <span>
         <Link href={`/projects/${data.slug}`}>
-          {t("viewMore")} <BiRightArrowAlt />
+          <span className="view-more-button-text">{t("viewMore")}</span> <BiRightArrowAlt />
         </Link>
       </span>
     </ProjectCardContainer>

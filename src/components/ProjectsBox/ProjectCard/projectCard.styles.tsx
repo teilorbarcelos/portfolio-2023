@@ -28,8 +28,16 @@ export const ProjectCardContainer = styled.div`
         align-items: center;
         color: ${(props) => props.theme.aLinksColor};
         font-weight: bold;
+        max-width: max-content;
 
         margin-top: ${rem(6)};
+
+        span.view-more-button-text {
+          &:hover {
+            margin-right: ${rem(6)};
+            text-decoration: underline;
+          }
+        }
     }
   }
 `;
