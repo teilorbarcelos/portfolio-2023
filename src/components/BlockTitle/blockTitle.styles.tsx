@@ -6,4 +6,5 @@ export const BlockTitle = styled.h1`
   font-size: ${rem(28)};
   line-height: ${rem(34)};
   color: ${(props) => props.theme.titlesColor};
+  text-align: center;
 `;

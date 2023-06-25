@@ -58,16 +58,26 @@ export const translations: Translations = {
     [Language.EN]: "Featured Projects",
     [Language.PT_BR]: "Projetos em destaque",
   },
+  clientsHomeTitle: {
+    [Language.EN]: "Clients and services that I Worked With",
+    [Language.PT_BR]: "Clientes e serviços que já trabalhei",
+  },
   projectsHomeLeading: {
-    [Language.EN]: "Here you will be able to see my study and own projects, thus knowing a little of my work.",
-    [Language.PT_BR]: "Aqui você poderá ver meus projetos próprios e de estudo, conhecendo, assim, um pouco do meu trabalho.",
+    [Language.EN]:
+      "Here you will be able to see my study and own projects, thus knowing a little of my work.",
+    [Language.PT_BR]:
+      "Aqui você poderá ver meus projetos próprios e de estudo, conhecendo, assim, um pouco do meu trabalho.",
   },
   moreProjects: {
     [Language.EN]: "More Projects",
     [Language.PT_BR]: "Mais Projetos",
   },
+  getInTouch: {
+    [Language.EN]: "Get in Touch",
+    [Language.PT_BR]: "Entre em contato",
+  },
   viewMore: {
     [Language.EN]: "View more",
     [Language.PT_BR]: "Ver mais",
-  }
+  },
 };

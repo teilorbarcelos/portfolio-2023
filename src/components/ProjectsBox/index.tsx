@@ -14,7 +14,7 @@ export const ProjectsBox = (data: ProjectsBoxProps) => {
       <BlockTitle>{t("projectsHomeTitle")}</BlockTitle>
 
       <BlockText
-        data-testid="Home-projects-block-text"
+        data-testid="home-projects-block-text"
         dangerouslySetInnerHTML={{
           __html: `<p>${t("projectsHomeLeading")}</p>`,
         }}

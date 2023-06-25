@@ -19,7 +19,8 @@ export const colorVariables = {
   COLOR011: "#121822",
   COLOR012: "#1E2738",
   COLOR013: "#629FEB",
-  COLOR014: "#465981"
+  COLOR014: "#465981",
+  COLOR015: "#8fa5c7"
 };
 
 export const themeConstants: ThemesConstantsProps = {
@@ -36,7 +37,9 @@ export const themeConstants: ThemesConstantsProps = {
     titlesColor: colorVariables.COLOR007,
     boxesColor: colorVariables.COLOR012,
     pTextColor: colorVariables.COLOR003,
-    aLinksColor: colorVariables.COLOR013
+    aLinksColor: colorVariables.COLOR013,
+    clientIconColor: colorVariables.COLOR003,
+    clientIconContainerColor: colorVariables.COLOR009
   },
   light: {
     backgroundColor: colorVariables.COLOR005,
@@ -51,6 +54,8 @@ export const themeConstants: ThemesConstantsProps = {
     titlesColor: colorVariables.COLOR011,
     boxesColor: colorVariables.COLOR007,
     pTextColor: colorVariables.COLOR006,
-    aLinksColor: colorVariables.COLOR013
+    aLinksColor: colorVariables.COLOR013,
+    clientIconColor: colorVariables.COLOR007,
+    clientIconContainerColor: colorVariables.COLOR015
   },
 };

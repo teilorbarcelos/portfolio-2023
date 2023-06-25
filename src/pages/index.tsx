@@ -4,6 +4,8 @@ import { PageHeader } from "@/components/PageHeader";
 import { HomePageContainer } from "@/styles/pages/home.styles";
 import { TranslatedProp } from "@/hooks/useTranslation/translations.interface";
 import { ProjectsBox } from "@/components/ProjectsBox";
+import { ClientsBox } from "@/components/ClientsBox";
+import { ClientsBoxMock } from "@/components/ClientsBox/clientsBox.mock";
 
 interface ProfileReturnProps {
   id: string;
@@ -64,6 +66,8 @@ const Home = (data: HomePageProps) => {
       />
 
       <ProjectsBox projects={data.projects} />
+
+      <ClientsBox clients={ClientsBoxMock.clients} />
     </HomePageContainer>
   );
 };

@@ -16,6 +16,8 @@ declare module "styled-components" {
     boxesColor: string;
     pTextColor: string;
     aLinksColor: string;
+    clientIconColor: string;
+    clientIconContainerColor: string;
   }
 }
 
